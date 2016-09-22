@@ -28,6 +28,7 @@ gem 'bootstrap-sass', '~>3.3.1.0'
 #gem 'sass-rails', '~> 5.0.0'
 gem 'susy'
 gem 'devise', '~> 3.4.1'
+gem 'rails_12factor', group: :production
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -56,5 +57,4 @@ end
 
 group :production do
   gem 'pg',               '0.17.1'
-  gem 'rails_12factor',   '0.0.2'
 end
