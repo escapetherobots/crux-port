@@ -1,8 +1,14 @@
+// modify bootstrap presets up here
+//-------------------------------------------------------------------
 $navbar-height: 50px;
 
+// import bootstrap
+//-------------------------------------------------------------------
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+// adjusted styles
+//-------------------------------------------------------------------
 .center {
   text-align: center;
 }
