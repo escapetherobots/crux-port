@@ -40,8 +40,6 @@ pickle-email-*.html
 
 # Configs
 /config/database.yml
-/config/initializers/devise.rb
-/config/locales/devise.en.yml
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
