@@ -32,6 +32,9 @@ gem 'rails_12factor', group: :production
 gem 'paperclip', '~> 4.2.0'
 gem 'aws-sdk', '<2.0'
 
+gem 'jquery-turbolinks'
+gem 'masonry-rails', '~> 0.2.4'
+
 
 
 # Use ActiveModel has_secure_password
@@ -47,7 +50,8 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+  gem 'sqlite3'
+  gem 'awesome_print'
 end
 
 group :development do

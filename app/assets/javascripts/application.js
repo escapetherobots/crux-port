@@ -12,6 +12,16 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require jquery.turbolinks
 //= require bootstrap-sprockets
+//= require masonry/jquery.masonry
 //= require_tree .
+
+/* global $ */
+ 
+$(document).ready(function () {
+  $('#pin image').on('shown.bs.modal', function (e) {
+    e.preventDefault();
+    alert("hello");
+  })
+});

@@ -1,0 +1,14 @@
+<% @users.each do |user| %>
+  <%= link_to 'Destroy', users_admin_path(user), method: :delete, data: { confirm: 'Are you sure?' } %>
+  <p>ID: <%= user.id %></p>
+  <p>Email: <%= user.email %></p>
+  <p>Admin: <%= user.admin %></p>
+  <p><%= user.pins.find_by(id: user.id) %></p>
+  <% user.pins.each do |pin| %>
+    <ul>
+      <li><%= pin.image.url %></li>
+    </ul>
+    
+  <% end %>
+  
+<% end %>
