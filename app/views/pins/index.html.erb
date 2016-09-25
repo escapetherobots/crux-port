@@ -5,7 +5,7 @@
     <% @pins.each do |pin| %>
         <div class="box">
             <div class="panel panel-default">
-                <% @myimage = pin.image.url(:thumbnail) %>
+                <% @myimage = pin.image.url(:medium) %>
                 <% @mytitle = pin.id.to_s %>
                 <%= image_tag @myimage, data: {toggle:"modal", target: "#id" + @mytitle } %><br />
                 <div class="panel-body">
