@@ -30,7 +30,7 @@
 
 <!-- Modal -->
 <% @pins.each do |pin| %>
-<% @myimage = pin.image.url(:medium) %>
+<% @myimage = pin.image.url(:large) %>
 <% @mytitle = pin.id.to_s %>
 <div class="modal fade" id=<%= "id" + @mytitle %> tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
