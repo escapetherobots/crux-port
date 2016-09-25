@@ -1,7 +1,16 @@
 // modify bootstrap presets up here
 //-------------------------------------------------------------------
 $navbar-height: 60px;
-
+.modal-dialog {
+  @media (min-width: 768px) {
+    width: 100% !important; 
+    padding:15px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 960px !important; 
+    padding:15px;
+  }
+}
 // import bootstrap
 //-------------------------------------------------------------------
 @import "bootstrap-sprockets";
